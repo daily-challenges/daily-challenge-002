@@ -4,7 +4,7 @@ var myArray = ["black", "white", "yellow", "red", "green", "blue"];
 async function doshit() {
     seconds = document.getElementById("timeField").value;
 
-    document.getElementById("epilepsywarning").style.visibility = "hidden";
+    
 
     var x = setInterval(function() {
         if(seconds == 0){
@@ -17,11 +17,13 @@ async function doshit() {
                 seconds = 1;
             }, 100);
         }
+        
         seconds--;
 
         document.getElementById("timer").innerHTML = seconds;
         
     }, 1000); 
+    document.getElementById("epilepsywarning").style.display = "none";
 }
 
 async function runThing() {
