@@ -22,8 +22,7 @@ async function doshit() {
 
         document.getElementById("timer").innerHTML = seconds;
         
-    }, 1000); 
-    document.getElementById("epilepsywarning").style.display = "none";
+    }, 1000);
 }
 
 async function runThing() {
